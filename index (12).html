@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rock Rumble 3D</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <canvas id="radar" width="192" height="192" class="hide"></canvas>
+  <div class="hud"><span>Rocks left <b id="left">6</b></span><span>KOs <b id="kos">0</b>&nbsp; Wins <b id="wins">0</b></span></div>
+  <div class="pop" id="pop"></div>
+  <div class="ov hide" id="shop"></div>
+  <button id="hook" class="hide">Hook</button>
+  <button id="dash" class="hide">Dash</button>
+  <div class="ov" id="ov">
+    <h1 id="ttl">Rock Rumble</h1>
+    <p id="msg">You’re the gold rock. The camera follows you. Point or tap where you want to roll, dash into rivals, and knock them into the lava. Last rock standing wins. Every map is different. Grab the glowing gems for Mega Rock or Quake. Earn 5 points per KO and 10 per win, then spend them in the Shop.</p>
+    <p id="sub">Keys: arrows or WASD to move, space to dash. Q and E turn the camera.</p>
+    <p id="ptsP"></p>
+    <div class="dif" id="dif"><button data-d="0" class="sel">Chill</button><button data-d="1">Normal</button><button data-d="2">Brutal</button></div>
+    <button id="go">Play</button>
+    <button id="shopB">Shop</button>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
